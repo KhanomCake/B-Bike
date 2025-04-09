@@ -558,7 +558,7 @@ a:focus {
           align-items: center;
   background-color: #1a2e35;
   border-radius: 100%;
-  margin-right: 35px;
+  margin-left: 25px;
 }
 
 .freelance_section .tab_container .t-link-box .img-box img {
@@ -571,6 +571,8 @@ a:focus {
 .freelance_section .tab_container .t-link-box .detail-box h5 {
   font-weight: bold;
   color: #ff4f5a;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .freelance_section .tab_container .t-link-box .detail-box h3 {
@@ -874,3 +876,34 @@ a:focus {
           transform: rotate(-45deg) translate(8px, -8px);
 }
 /*# sourceMappingURL=style.css.map */
+.stat-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.stat-text {
+  min-width: 220px; /* ความกว้างที่เท่ากัน */
+  text-align: left;
+  margin-right: 15px;
+}
+
+.stat-number {
+  display: block;
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.stat-label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+}
+

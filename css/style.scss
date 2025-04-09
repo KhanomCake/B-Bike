@@ -410,7 +410,7 @@ a:focus {
   text-align: center;
 
   .heading_container {
-    justify-content: center;
+    justify-content: flex-start;
 
     h2 {
       border-bottom: 1px solid $white;
