@@ -68,6 +68,8 @@ body {
 
 .heading_container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   h2 {
     font-weight: bold;
@@ -408,7 +410,7 @@ a:focus {
   text-align: center;
 
   .heading_container {
-    justify-content: center;
+    justify-content: flex-start;
 
     h2 {
       border-bottom: 1px solid $white;
