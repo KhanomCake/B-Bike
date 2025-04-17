@@ -42,7 +42,7 @@
 <body>
   <div id="display-box"></div>
   <div>
-    <button class="square-button">C</button>
+    <button class="square-button" onclick="clearDisplay()">C</button>
     <button class="square-button">()</button>
     <button class="square-button">%</button>
     <button class="square-button">÷</button>
@@ -82,6 +82,11 @@
     function clickOnNumber(number) {
       displayBox.innerText = displayBox.innerText + number;
     }
+
+    function clearDisplay() {
+      displayBox.innerText = "";
+    }
+
   </script>
 </body>
 </html>
