@@ -80,27 +80,27 @@
     const displayBox = document.getElementById("display-box");
 
     function clickOnNumber(number) {
-   let current = displayBox.innerText;
+      let current = displayBox.innerText;
 
-    if (current.length > 11){
-      return;
+        if (current.length > 11){
+          return;
+        }
+
+        if (number === "0" && current === "") {
+          return; 
+        }
+
+        if (number === "." && current === "") {
+          displayBox.innerText = "0.";
+          return;
+        }
+
+        if (number === "." && current.includes(".")) {
+          return; 
+        }
+
+      displayBox.innerText = current + number;
     }
-
-    if (number === "0" && current === "") {
-      return; 
-    }
-
-    if (number === "." && current === "") {
-      displayBox.innerText = "0.";
-      return;
-    }
-
-    if (number === "." && current.includes(".")) {
-      return; 
-    }
-
-  displayBox.innerText = current + number;
-  }
 
     function clearDisplay() {
       displayBox.innerText = "";
